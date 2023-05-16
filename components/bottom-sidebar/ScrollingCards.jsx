@@ -57,7 +57,7 @@ const ScrollingCards = () => {
         <BsFillXCircleFill />
       </button>
       <h3 className="pb-4 text-center text-2xl font-bold text-slate-600 dark:text-stone-300">
-        LIT🔥LINKS
+      YOUR LINKS
       </h3>
       {links.length !== 0 ? (
         <div
@@ -121,7 +121,7 @@ const ScrollingCards = () => {
           <h4 className="text-xl font-semibold leading-none">
             No links found.
           </h4>
-          <br /> Your maglit links appear here.
+          <br /> Your  links appear here.
         </div>
       )}
     </div>

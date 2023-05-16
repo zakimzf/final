@@ -21,13 +21,13 @@ const Form = ({
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex h-full flex-col items-center justify-center"
+      className="flex h-full flex-col items-center justify-center "
     >
-      <div className="flex flex-col items-center justify-center gap-y-4">
+      <div className="flex flex-col color-white items-center justify-center w-full gap-y-8 px-6 py-6">
         {/* LINK INPUT */}
         <input
           type="text"
-          className="text-input"
+          className="text-input "
           value={magnetLink}
           onChange={(e) => setMagnetLink(e.target.value)}
           placeholder="Enter your link"
@@ -35,12 +35,17 @@ const Form = ({
         />
 
         {/* LOCK & CONFIG BUTTONS */}
-        <div className="flex flex-row items-center justify-center space-x-4">
+   
+        <div className="flex flex-row items-center justify-between space-x-4 ">
+    
+        <input type="submit" className="submit-button dark:bg-white bg-black hover:border-1 text-white dark:text-black" value="Shorten Link 🔥" />
+    
+     
           {locked ? (
             <button
               type="button"
               onClick={() => setLocked(!locked)}
-              className="animate z-10 cursor-pointer text-3xl text-slate-400 hover:scale-110 dark:text-stone-400"
+              className="animate z-10 cursor-pointer text-3xl text-black hover:scale-110 dark:text-white"
             >
               <BsFillLockFill />
             </button>
@@ -48,7 +53,7 @@ const Form = ({
             <button
               type="button"
               onClick={() => setLocked(!locked)}
-              className="animate z-10 cursor-pointer text-3xl text-slate-400 hover:scale-110 dark:text-stone-400"
+              className="animate z-10 cursor-pointer text-3xl text-black hover:scale-110 dark:text-white"
             >
               <BsFillUnlockFill />
             </button>
@@ -57,7 +62,7 @@ const Form = ({
           {/* LINK SETTINGS BUTTON */}
           <button
             type="button"
-            className="animate z-10 cursor-pointer object-cover text-3xl text-slate-400 hover:rotate-45 dark:text-stone-400"
+            className="animate z-10 cursor-pointer object-cover text-3xl text-black hover:rotate-45 dark:text-white"
             onClick={() => setLinkSettingsOpen(true)}
           >
             <BsFillGearFill />
@@ -70,8 +75,9 @@ const Form = ({
             !locked
               ? "animate h-0 -translate-y-7 opacity-0"
               : "animate h-20 translate-y-0 opacity-100"
-          } relative flex items-center justify-center`}
+          } relative flex w-full items-center justify-center`}
         >
+          
           <input
             type={showPassword ? "text" : "password"}
             className="password-input"
@@ -83,14 +89,14 @@ const Form = ({
           />
           {showPassword ? (
             <BsFillEyeFill
-              className="absolute right-3 cursor-pointer text-xl text-orange-500 dark:text-orange-400"
+              className="absolute right-3 cursor-pointer text-xl text-white dark:text-white"
               onClick={() => {
                 setShowPassword(!showPassword);
               }}
             />
           ) : (
             <BsFillEyeSlashFill
-              className="absolute right-3 cursor-pointer text-xl text-orange-500 dark:text-orange-400"
+              className="absolute right-3 cursor-pointer text-xl text-black dark:text-white"
               onClick={() => {
                 setShowPassword(!showPassword);
               }}
@@ -100,7 +106,7 @@ const Form = ({
       </div>
 
       {/* LIGHT IT UP BUTTON */}
-      <input type="submit" className="submit-button" value="Light It Up 🔥" />
+     
     </form>
   );
 };

@@ -33,26 +33,7 @@ const Navbar = () => {
         <BsFillXCircleFill />
       </button>
       <FAQSection />
-      <div className="animate mb-10 flex items-center justify-center gap-10 text-black dark:text-stone-300">
-        <a
-          href="https://github.com/NayamAmarshe/MagLit"
-          className="animate flex flex-col items-center justify-center hover:text-black/50 dark:hover:text-stone-500"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <FaGithub className="text-3xl" />
-          <p className="font-medium">GitHub</p>
-        </a>
-        <a
-          href="https://buymeacoffee.com/fossisthefuture"
-          className="animate flex flex-col items-center justify-center hover:text-black/50 dark:hover:text-stone-500"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <SiBuymeacoffee className="text-3xl" />
-          <p className="break-before-all font-medium">Donate</p>
-        </a>
-      </div>
+      
       {/* FOOTER */}
       <p className="mb-1 text-slate-500 dark:text-stone-500">
         Made with ⌨ and 🖱

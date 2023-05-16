@@ -10,50 +10,9 @@ const FAQSection = () => {
           (Scroll to read more)
         </p>
       </h3>
-      <div className="mb-10 flex h-[70vh] w-full flex-col items-center gap-5 overflow-y-scroll py-5 pb-10 md:gap-10">
-        <h3 className="text-lg font-semibold dark:text-stone-400">
-          Checkout my other projects
-        </h3>
-        <a
-          href="https://github.com/upscayl/upscayl/"
-          className="animate m-4 flex max-w-full flex-col items-center justify-center gap-4 rounded-lg bg-green-100/40 p-4 shadow-lg shadow-green-200 hover:shadow-xl hover:shadow-green-200 dark:bg-stone-700/40 dark:shadow-none md:m-0 md:w-1/2 lg:w-2/6"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img
-            src="/upscayl.jpg"
-            alt="Upscayl Screenshot"
-            className="h-full w-full rounded-lg"
-          />
-          <div className="text-center">
-            <h5 className="text-lg font-medium dark:text-stone-200">Upscayl</h5>
-            <p className="dark:text-stone-300">
-              Free and Open Source AI Image Upscaler
-            </p>
-          </div>
-        </a>
-
-        <a
-          href="https://pashword.app"
-          className="animate m-4 flex max-w-full flex-col items-center justify-center gap-4 rounded-lg bg-green-100/40 p-4 shadow-lg shadow-green-200 hover:shadow-xl hover:shadow-green-200 dark:bg-stone-700/40 dark:shadow-none md:m-0 md:w-1/2 lg:w-2/6"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img
-            src="/pashword.jpg"
-            alt="Pashword Screenshot"
-            className="h-full w-full rounded-lg"
-          />
-          <div className="text-center">
-            <h5 className="text-lg font-medium dark:text-stone-200">
-              Pashword
-            </h5>
-            <p className="dark:text-stone-300">
-              Generate passwords that you don't need to remember and cannot ever
-              forget
-            </p>
-          </div>
-        </a>
+      <div className="mb-10 flex h-[70vh] w-50 flex-col items-center gap-5 overflow-y-scroll py-5 pb-10 md:gap-10">
+        
+       
 
         {/* <a
           href="https://github.com/NayamAmarshe/please"
@@ -128,27 +87,7 @@ const FAQSection = () => {
           shadowColor="shadow-purple-200 dark:shadow-none"
           hoverShadowColor="hover:shadow-purple-200"
         />
-        <MenuCard
-          heading="How can I help? 😁"
-          content={[
-            "1. You can submit PRs on GitHub to improve MagLit's codebase or ",
-            <br key={0}></br>,
-            "2. You can donate here:",
-            <a
-              key={2}
-              target="_blank"
-              rel="noreferrer"
-              href="https://www.buymeacoffee.com/fossisthefuture"
-              className="font-bold text-blue-400 dark:text-cyan-500"
-            >
-              {" "}
-              Buy Me A Coffee{" "}
-            </a>,
-          ]}
-          bgColor="bg-red-100/40 dark:bg-stone-700/40"
-          shadowColor="shadow-red-200 dark:shadow-none"
-          hoverShadowColor="hover:shadow-red-200"
-        />
+        
         <MenuCard
           heading="My adblock detected a tracker! 🤥"
           content={[

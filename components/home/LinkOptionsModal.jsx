@@ -26,7 +26,7 @@ const LinkOptionsModal = ({
         animate={{ y: 0 }}
         transition={{ duration: 0.3, ease: "easeInOut" }}
         exit={{ y: -50 }}
-        className="max-w-mid relative flex flex-col items-center justify-start rounded-xl bg-slate-50 ring-8 ring-slate-200/70 dark:bg-stone-900 dark:ring-stone-700/70"
+        className="relative flex flex-col w-96 items-center justify-start rounded-xl bg-black ring-8 ring-slate-200/70 dark:bg-white dark:ring-stone-700/70"
         onClick={(e) => e.stopPropagation()}
       >
         <button
@@ -37,11 +37,11 @@ const LinkOptionsModal = ({
         >
           <AiFillCloseCircle />
         </button>
-        <h4 className="mt-5 text-2xl font-semibold text-slate-400 dark:text-stone-500">
+        <h4 className="mt-5 text-2xl font-semibold text-white dark:text-black">
           Link Options
         </h4>
         <div className="mt-2 flex h-full w-full flex-col items-center justify-center space-y-5 p-5">
-          <p className="w-52 truncate text-slate-400 dark:text-stone-400">
+          <p className="w-52 truncate text-white dark:text-black">
             {customSlug.length < 1
               ? BASE_URL + "example"
               : BASE_URL}
@@ -55,15 +55,15 @@ const LinkOptionsModal = ({
             onChange={(e) => setCustomSlug(e.target.value.toLowerCase())}
           />
           <div className="flex flex-row flex-wrap items-center space-x-2">
-            <p className="text-md text-slate-400 dark:text-stone-500">
+            <p className="text-md text-white dark:text-black">
               Download QR Code?
             </p>
             <button onClick={() => setDownloadQRCode(!downloadQRCode)}>
               <AiFillCheckCircle
                 className={`${
                   downloadQRCode
-                    ? "text-cyan-300 dark:text-stone-400"
-                    : "text-slate-300 dark:text-stone-700"
+                    ? "text-cyan-300 dark:text-black"
+                    : "text-slate-300 dark:text-green-500"
                 } animate text-2xl`}
               />
             </button>

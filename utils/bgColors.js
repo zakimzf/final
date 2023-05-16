@@ -1,5 +1,7 @@
 const colorsList = [
   "bg-red-100",
+  "bg-black",
+  "bg-white",
   "bg-orange-100",
   "bg-amber-100",
   "bg-yellow-100",
@@ -19,6 +21,8 @@ const colorsList = [
 
 const darkColorsList = [
   "bg-red-800",
+  "bg-black",
+  "bg-white",
   "bg-orange-800",
   "bg-amber-800",
   "bg-yellow-800",

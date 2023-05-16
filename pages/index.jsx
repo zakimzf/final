@@ -148,7 +148,7 @@ export default function Home() {
       return;
     }
 
-    const loadingToast = toast.loading("Hold on, lighting up your link...");
+    const loadingToast = toast.loading("Hold on, shortening your link...");
 
     await fetch(BASE_URL + "api/create", {
       method: "POST",
@@ -226,7 +226,7 @@ export default function Home() {
     <div
       className={`${
         navbarOpen || cardsOpen ? "scale-90 blur-3xl" : "scale-100 blur-none"
-      } animate flex h-screen flex-col items-center justify-center gap-y-10 overflow-hidden bg-slate-50 dark:bg-stone-900`}
+      } animate flex h-screen flex-col items-center justify-center gap-y-10 overflow-hidden bg-white dark:bg-black`}
       onWheel={handleScroll}
       {...handlers}
     >
@@ -270,13 +270,13 @@ export default function Home() {
       {/* LIT LINKS BUTTON */}
       {/* DESKTOP */}
       <button
-        className="invisible absolute bottom-5 flex flex-col items-center justify-center font-medium text-slate-400 dark:text-stone-400 sm:visible"
+        className="invisible absolute bottom-0  flex flex-col w-96 h-16 bg-black dark:bg-white rounded-lg items-center justify-center font-medium text-white dark:text-black sm:visible"
         onClick={() => {
           setCardsOpen(!cardsOpen);
         }}
       >
         <RiArrowUpSLine className="text-3xl" />
-        Lit Links
+        Your Links
       </button>
 
       {/* MOBILE */}
@@ -294,13 +294,13 @@ export default function Home() {
       </button>
 
       <a
-        href="https://vercel.com/?utm_source=mag-lit&utm_campaign=oss"
+        href="https://firebase.google.com/"
         rel="noreferrer"
         target="_blank"
       >
         <img
-          src="/powered-by-vercel.svg"
-          alt="Powered by Vercel"
+          src="/firebaselogo.svg"
+          alt="built with firebase"
           className="absolute right-5 bottom-5 w-52 mix-blend-exclusion"
         />
       </a>
