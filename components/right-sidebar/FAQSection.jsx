@@ -34,14 +34,14 @@ const FAQSection = () => {
         </a> */}
 
         <MenuCard
-          heading="The hell is this? 🤔"
+          heading="What is this ? 🤔"
           content={[
-            "MagLit is an encrypted and privacy respecting Link Shortener service that supports not only your regular website links but also Magnet Links which are extensively used to download and share torrents.",
+            "Nsakly is an encrypted and privacy respecting Link Shortener service that supports not only your regular website links but also Magnet Links which are extensively used to download and share torrents.",
             <br key={1}></br>,
             <br key={2}></br>,
             <i key={3}>
               <b key={4}>
-                MagLit admins cannot ever see what links you light up once you
+               Nsakly admins cannot ever see what links you light up once you
                 encrypt them using your own secret key.
               </b>
             </i>,
@@ -50,27 +50,19 @@ const FAQSection = () => {
           shadowColor="shadow-green-200 dark:shadow-none"
           hoverShadowColor="hover:shadow-green-200"
         />
+        
         <MenuCard
-          heading="What's a 'MagLit'? 😅"
-          content={[
-            "The word MagLit is derived from Magnet and Lit. MagLit started out as a link shortener for torrent magnet links. Later, I made MagLit available for HTTP(s) links but the name stayed :)",
-          ]}
-          bgColor="bg-green-100/40 dark:bg-stone-700/40"
-          shadowColor="shadow-green-200 dark:shadow-none"
-          hoverShadowColor="hover:shadow-green-200"
-        />
-        <MenuCard
-          heading="Why should I use MagLit? 🤓"
+          heading="Why should I use Nsak.ly? 🤓"
           content={[
             <b key={1}>
               3 Reasons:
               <br />
             </b>,
-            "1 => MagLit keeps everything encrypted. This means nobody except you has access to your links, especially when you use your own password.",
+            "1 => Nsakly keeps everything encrypted. This means nobody except you has access to your links, especially when you use your own password.",
             <br />,
-            "2 => MagLit lets you password protect your links and also lets you use custom links. All without any sign-up or account registration.",
+            "2 => Nsakly lets you password protect your links and also lets you use custom links. All without any sign-up or account registration.",
             <br />,
-            "3 => MagLit protects your privacy. 100% Free and Open Source, Verifiable website deployments. No data mining, no data selling.",
+            "3 => Nsakly protects your privacy. 100% Free and Open Source, Verifiable website deployments. No data mining, no data selling.",
           ]}
           bgColor="bg-amber-100/40 dark:bg-stone-700/40"
           shadowColor="shadow-amber-200 dark:shadow-none"
@@ -81,7 +73,7 @@ const FAQSection = () => {
           content={[
             <b key={1}>Yes 100%</b>,
             <br key={2}></br>,
-            "MagLit is a totally free and open source service licensed under AGPLv3. All your requests are proxied through a server and no personal data is ever stored. You can check out the source code on GitHub if you want 😉",
+            "MagLit is a totally free and open source service licensed under AGPLv3. All your requests are proxied through a server and no personal data is ever stored.",
           ]}
           bgColor="bg-purple-100/40 dark:bg-stone-700/40"
           shadowColor="shadow-purple-200 dark:shadow-none"
@@ -91,7 +83,7 @@ const FAQSection = () => {
         <MenuCard
           heading="My adblock detected a tracker! 🤥"
           content={[
-            "Don't worry, MagLit uses open source and privacy respecting",
+            "Don't worry, Nsakly uses open source and privacy respecting",
             <a
               key={1}
               className="font-bold text-blue-400 dark:text-cyan-500"

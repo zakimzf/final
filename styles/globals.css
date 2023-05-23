@@ -21,13 +21,13 @@
     @apply transition-none;
   }
   .close-button {
-    @apply text-black hover:text-green-500 dark:text-black dark:hover:text-green-500;
+    @apply text-black hover:text-green-500 dark:text-white dark:hover:text-green-500;
   }
   .input-box {
     @apply animate w-11/12 rounded-2xl p-5 outline-none ring-2 ring-black hover:shadow-md focus:shadow-lg  md:w-full xs:w-full;
   }
   .submit-button {
-    @apply animate z-10 mt-5 rounded-2xl bg-white p-5 text-black hover:cursor-pointer border-black border-2 hover:shadow-lg  dark:bg-black dark:text-white  dark:hover:text-green-500 dark:hover:shadow-[#131110];
+    @apply animate z-10 mt-5 rounded-2xl bg-white p-5 text-black hover:cursor-pointer border-black border-2 hover:shadow-lg  dark:bg-white dark:text-black  dark:hover:text-green-500 dark:hover:shadow-[#131110];
   }
   .save-button {
     @apply animate z-10 mt-5 rounded-2xl bg-white p-5 text-slate-500 hover:cursor-pointer hover:bg-green-200 hover:text-green-700 hover:shadow-lg hover:shadow-green-300 dark:bg-green-700 dark:text-slate-400 dark:hover:bg-green-200 dark:hover:text-green-700;

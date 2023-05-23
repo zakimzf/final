@@ -35,11 +35,11 @@ const Navbar = () => {
       <FAQSection />
       
       {/* FOOTER */}
-      <p className="mb-1 text-slate-500 dark:text-stone-500">
+      <p className="mb-1 text-black dark:text-black">
         Made with ⌨ and 🖱
       </p>
-      <p className="mb-1 text-sm text-slate-500 dark:text-stone-500">
-        Copyright © {new Date().getFullYear()} <b>MagLit</b>
+      <p className="mb-1 text-sm text-black dark:text-black">
+        Copyright © {new Date().getFullYear()} <b>Nsak.ly</b>
       </p>
     </div>
   );
